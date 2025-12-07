@@ -19,12 +19,12 @@ export const metadata = {
   },
   description:
     "Portfolio of Shah Sawar, a Front-End Developer building modern web interfaces.",
-  metadataBase: new URL("https://your-portfolio.com"),
+  metadataBase: new URL("https://https://shahsawar-portfolio.vercel.app"),
   openGraph: {
     title: "Shah Sawar | Front-End Developer",
     description:
       "Portfolio of Shah Sawar, a Front-End Developer building modern web interfaces.",
-    url: "https://your-portfolio.com",
+    url: "https://https://shahsawar-portfolio.vercel.app",
     type: "website",
     images: ["/my-photo.jpg"],
   },

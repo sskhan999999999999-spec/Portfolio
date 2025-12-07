@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /admin/
 Allow: /
-Sitemap: https://www.yourportfolio.com/sitemap.xml
+Sitemap: https://https://shahsawar-portfolio.vercel.app/sitemap.xml
