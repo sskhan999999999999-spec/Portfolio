@@ -52,6 +52,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+         <Head>
+          <meta name="keywords" content="Shah Sawar, Front-End Developer, Portfolio, React, Next.js, Tailwind CSS, HTML, CSS, JavaScript" />
+        </Head>
          <Navbar/>
         {children}
       </body>
