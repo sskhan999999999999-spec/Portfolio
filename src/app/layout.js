@@ -18,7 +18,7 @@ export const metadata = {
     template: "%s | Shah Sawar",
   },
   description:
-    "Portfolio of Shah Sawar, a Front-End Developer building modern web interfaces.",
+    "I am Shah Sawar, a Front-End Developer building modern, fast, and responsive web applications using Next.js, React, and Tailwind CSS.",
   keywords: [
     "Shah Sawar",
     "Front-End Developer",
@@ -28,23 +28,28 @@ export const metadata = {
     "Tailwind CSS",
     "HTML",
     "CSS",
-    "JavaScript"
+    "JavaScript",
   ],
   metadataBase: new URL("https://shahsawar-portfolio.vercel.app"),
   openGraph: {
     title: "Shah Sawar | Front-End Developer",
     description:
-      "Portfolio of Shah Sawar, a Front-End Developer building modern web interfaces.",
+      "I am Shah Sawar, a Front-End Developer building modern, fast, and responsive web applications using Next.js, React, and Tailwind CSS.",
     url: "https://shahsawar-portfolio.vercel.app",
     type: "website",
     images: ["/my-photo.jpg"],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shah Sawar | Front-End Developer",
+    description:
+      "I am Shah Sawar, a Front-End Developer building modern, fast, and responsive web applications using Next.js, React, and Tailwind CSS.",
+    images: ["/my-photo.jpg"],
+  },
   icons: {
-    icon: "/my-photo.jpg",
+    icon: "/favicon.ico",
   },
 };
-
-
 
 export default function RootLayout({ children }) {
   return (
@@ -52,10 +57,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <Head>
-          <meta name="keywords" content="Shah Sawar, Front-End Developer, Portfolio, React, Next.js, Tailwind CSS, HTML, CSS, JavaScript" />
-        </Head>
-         <Navbar/>
+        <Navbar />
         {children}
       </body>
     </html>
