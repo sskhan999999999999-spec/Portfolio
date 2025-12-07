@@ -19,12 +19,23 @@ export const metadata = {
   },
   description:
     "Portfolio of Shah Sawar, a Front-End Developer building modern web interfaces.",
-  metadataBase: new URL("https://https://shahsawar-portfolio.vercel.app"),
+  keywords: [
+    "Shah Sawar",
+    "Front-End Developer",
+    "Portfolio",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  metadataBase: new URL("https://shahsawar-portfolio.vercel.app"),
   openGraph: {
     title: "Shah Sawar | Front-End Developer",
     description:
       "Portfolio of Shah Sawar, a Front-End Developer building modern web interfaces.",
-    url: "https://https://shahsawar-portfolio.vercel.app",
+    url: "https://shahsawar-portfolio.vercel.app",
     type: "website",
     images: ["/my-photo.jpg"],
   },
@@ -32,6 +43,7 @@ export const metadata = {
     icon: "/my-photo.jpg",
   },
 };
+
 
 
 export default function RootLayout({ children }) {
