@@ -1,6 +1,7 @@
 import HeroSection from "./Components/HomePages/HeroSection";
 import Projects from "./Components/HomePages/Projects";
 import SkillsSection from "./Components/HomePages/SkillsSection";
+import Work from "./Components/HomePages/Work";
 
 export const metadata = {
   title: "Shah Sawar | Frontend Developer",
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <SkillsSection />
       <Projects/>
+      <Work/>
     </div>
   );
 }
