@@ -11,7 +11,7 @@ function Projects() {
         </div>
         <div className='flex justify-center flex-wrap'>
         <div className='mt-10  sm:grid sm:grid-cols-2  sm:gap-10 flex justify-center gap-y-10 flex-wrap'>
-            <div className="sm:w-full max-w-[400px] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(200,200,700,10)] overflow-hidden rounded-xl">
+            <div className="sm:w-full max-w-[400px] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(200,200,700,10)] overflow-hidden rounded-xl active:scale-105 active:shadow-[0_10px_25px_rgba(200,200,700,10)]">
               <div>
                 <Image
                   src="/betagram-app.png"
@@ -33,7 +33,8 @@ function Projects() {
             </div>
 
             {/* =========== first image */}
-            <div className="sm:w-full max-w-[400px] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(200,200,700,10)] overflow-hidden rounded-xl">
+            <div className="sm:w-full max-w-[400px] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(200,200,700,10)] overflow-hidden rounded-xl
+            active:scale-105 active:shadow-[0_10px_25px_rgba(200,200,700,10)]">
             <div>
               <Image
                 src="/project-1.png"
@@ -67,7 +68,8 @@ function Projects() {
           </div>
 
             {/* ====== second image  */}
-            <div className="sm:w-full max-w-[400px] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(200,200,700,10)] overflow-hidden rounded-xl">
+            <div className="sm:w-full max-w-[400px] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(200,200,700,10)] overflow-hidden rounded-xl
+            active:scale-105 active:shadow-[0_10px_25px_rgba(200,200,700,10)]">
             <div>
               <Image
                 src="/Todo-app.png"
@@ -87,7 +89,8 @@ function Projects() {
           </div>
 
             {/* third imga ====== */}
-            <div className="sm:w-full max-w-[400px] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(200,200,700,10)] overflow-hidden rounded-xl">
+            <div className="sm:w-full max-w-[400px] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(200,200,700,10)] overflow-hidden rounded-xl
+            active:scale-105 active:shadow-[0_10px_25px_rgba(200,200,700,10)]">
             <div>
               <Image
                 src="/Tic-Tic-Toe-Game.png"
