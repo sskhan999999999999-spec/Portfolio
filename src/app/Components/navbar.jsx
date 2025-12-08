@@ -49,7 +49,7 @@
                       <Link href="/" onClick={() => setOpen(false)}>Home</Link>
                       <Link href="/About" onClick={() => setOpen(false)}>About</Link>
                       <Link href="/Skills" onClick={() => setOpen(false)}>Skills</Link>
-                      <Link href="/Contact" onClick={() => setOpen(false)}>Contact</Link>
+                      {/* <Link href="/Contact" onClick={() => setOpen(false)}>Contact</Link> */}
                     </ul>
                   </div>
 
