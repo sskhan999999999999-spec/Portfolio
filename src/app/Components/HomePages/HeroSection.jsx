@@ -27,10 +27,10 @@ function HeroSection() {
   </p>
 
   <div className="flex items-center gap-2 md:text-xl sm:text-lg font-medium text-gray-700">
-    <p>Using</p>
+    
     <TypewriterComponent
       options={{
-        strings: ["React", "Next.js"],
+        strings: ["using React", "and Next.js"],
         autoStart: true,
         loop: true,
       }}
