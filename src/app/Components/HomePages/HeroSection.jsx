@@ -6,7 +6,7 @@ import Image from "next/image";
 function HeroSection() {
   return (
     <div id='hero' className='flex justify-center '>
-       <div className="bg-indigo-100 w-full flex justify-center items-center md:p-30 p-5 py-10">
+       <div className="bg-indigo-100 w-full flex justify-center items-center md:p-30 p-5 py-20">
      <div className="bg-indigo-100 w-full flex flex-col justify-center px-10 space-y-4">
   
   <h1 className="md:text-5xl sm:text-2xl text-xl font-bold leading-tight">
