@@ -24,15 +24,15 @@ function Footer() {
   return (
     <div>
       <div className='bg-gray-900 text-gray-300 p-6 '>
-      <div className='flex justify-between px-5 items-center gap-2  '>
-        <p>© 2025 Shah Sawar. All rights reserved.</p>
-        <p>Frontend Developer • React • Next.js</p>
+      <div className='sm:flex    sm:justify-between px-5 items-center sm:gap-2  '>
+        <p className='mb-3'>© 2025 Shah Sawar. All rights reserved.</p>
+        <p className='mb-3'>Frontend Developer • React • Next.js</p>
         <div className='flex justify-around gap-5'>
           {footers.map((footer,idx)=>(<div key={idx}>
           <div className='bg-gray-100 rounded-full p-2 w-fit text-black'>
             {footer.img}
             </div>
-           <Link href={footer.link} target="_blank">{footer.name}</Link>
+           <Link className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' href={footer.link} target="_blank">{footer.name}</Link>
           </div>))}
          
         </div>
