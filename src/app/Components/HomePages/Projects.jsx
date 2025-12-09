@@ -22,7 +22,7 @@ function Projects() {
       app:"My portfolio",
       dic:"My personal portfolio showcasing projects, skills, and professional UI built with Next.js and Tailwind CSS.",
       button:"View",
-      scrollToHero: true, // smooth scroll flag
+      scrollToHero: true, 
     },
     {
       img:'/Todo-app.png',
@@ -107,7 +107,7 @@ function Projects() {
                     ) : project.openModal ? (
                       <button
                         onClick={() => handleOpenModal(project)}
-                        className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 cursor-pointer"
+                        className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors  duration-300 cursor-pointer"
                       >
                         {project.button}
                       </button>
@@ -133,7 +133,7 @@ function Projects() {
           <div className="bg-white rounded-xl max-w-lg w-full p-6 relative">
             <button 
               onClick={handleCloseModal} 
-              className="absolute top-2 right-2 text-gray-500 font-bold text-xl"
+              className="absolute top-2 right-2 text-gray-500 hover:bg-red-500 active:bg-red-500 w-10 hover:text-white font-bold text-2xl"
             >
               ×
             </button>

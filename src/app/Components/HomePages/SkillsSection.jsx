@@ -58,30 +58,6 @@ function SkillsSection() {
                   <p>{skill.disc} </p>
                 </div>
               </div>)) }
-{/*       
-                 
-      
-          
-        
-          <div className="
-                  w-50 
-                  transition-all duration-300 
-                  hover:scale-105 
-                  hover:shadow-[0_0_25px_rgba(0,200,255,5)]
-                  rounded-xl
-                  overflow-hidden
-                  active:scale-105
-                active:shadow-[0_0_25px_rgba(0,200,255,5)]
-                ">
-                  <div className="bg-white/50 p-2  flex justify-center  ">
-                    <Image src="/nextjs-icon.png" width={120} height={120} alt="Next js" />
-                  </div>
-      
-                  <div className="bg-white/90 p-2 text-gray-500 rounded-b-lg">
-                    <h1 className="text-lg font-semibold">Next js</h1>
-                    <p>Delivering fast, optimized apps with SSR,SSG & API power</p>
-                  </div>
-                </div> */}
         </div>
       </div>
       </div>
