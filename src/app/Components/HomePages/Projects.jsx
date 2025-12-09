@@ -133,7 +133,7 @@ function Projects() {
           <div className="bg-white rounded-xl max-w-lg w-full p-6 relative">
             <button 
               onClick={handleCloseModal} 
-              className="absolute top-2 right-2 text-gray-500 hover:bg-red-500 active:bg-red-500 w-10 hover:text-white font-bold text-2xl"
+              className="absolute top-2 right-2 text-gray-500  hover:bg-red-500 active:bg-red-500 active:text-white w-10 hover:text-white font-bold text-2xl"
             >
               ×
             </button>
