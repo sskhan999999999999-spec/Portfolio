@@ -19,7 +19,7 @@
         
     return (
            <div>
-             <nav className=' bg-slate-900 p-4 w-full text-white flex justify-between text-2xl items-center top-0  fixed z-10000000 px-6 '>
+             <nav className=' bg-slate-900 p-4 w-full text-white flex justify-between text-2xl items-center top-0  fixed z-10000000 px-6 sm:flex sm:justify-around '>
                   <button className='sm:hidden flex' onClick={()=>setOpen(!open)}>
                      <Menu/>
                      </button>
@@ -32,7 +32,7 @@
                     <li><Link href="Skills" className={linkClass("/Skills")}>Skills</Link></li>
                   </ul>
                     </div>
-                     <li className='list-none hidden sm:flex '><button className=' text-white bg-indigo-500  text-xl  hover:bg-indigo-600 hover:border-indigo-700 duration-300 hover:text-white transition-colors py-2 px-4 rounded-full'>contact</button></li>
+                     <li className='list-none hidden sm:flex '><button className=' text-white bg-indigo-500  text-xl  hover:bg-indigo-600 hover:border-indigo-700 duration-300 hover:text-white transition-colors py-2 px-4 rounded-full cursor-pointer'>contact</button></li>
              </nav>
              {open && (
             <div

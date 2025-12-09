@@ -8,7 +8,13 @@ export const metadata = {
 
 function Project() {
     return (  
-        <div><h1>This is my project page</h1></div>
+        <div>
+          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
+          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
+          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
+          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
+          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
+        </div>
 
     )
 }

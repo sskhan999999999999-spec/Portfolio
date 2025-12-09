@@ -100,21 +100,21 @@ function Projects() {
                     {project.scrollToHero ? (
                       <button
                         onClick={handleScrollToHero}
-                        className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300"
+                        className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 cursor-pointer "
                       >
                         {project.button}
                       </button>
                     ) : project.openModal ? (
                       <button
                         onClick={() => handleOpenModal(project)}
-                        className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300"
+                        className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 cursor-pointer"
                       >
                         {project.button}
                       </button>
                       
                     ) : (
                       <Link href={project.link} target="_blank" rel="noopener noreferrer">
-                        <button className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300">
+                        <button className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 cursor-pointer">
                           {project.button}
                         </button>
                       </Link>
