@@ -37,9 +37,9 @@ function HeroSection() {
     />
   </div>
   <div className="flex  gap-5">
-    <button className="border border-indigo-500 bg-indigo-500 text-white sm:p-1 md:rounded-full hover:border-indigo-700 hover:bg-indigo-700 duration-300 transition-colors px-1 md:px-4 sm:px-2  rounded-xl  sm:rounded-lg">Hire me</button>
-    <button className="bg-transparent border border-indigo-700 hover:bg-indigo-700  text-black p-1 px-2 rounded-xl  md:p-2 md:px-4 
-    md:rounded-full  hover:text-white transition-colors duration-300">Download CV</button>
+    <button className="border border-indigo-500 bg-indigo-500 text-white sm:p-1 md:rounded-full hover:border-indigo-700 hover:bg-indigo-700 duration-300 transition-colors px-1 md:px-4 sm:px-2  rounded-xl  sm:rounded-lg active:bg-indigo-700">Hire me</button>
+    <button className="bg-transparent border border-indigo-700 hover:bg-indigo-700   text-black p-1 px-2 rounded-xl  md:p-2 md:px-4 
+    md:rounded-full  hover:text-white transition-colors duration-300 active:bg-indigo-700 active:text-white">Download CV</button>
   </div>
 </div>
    <div>

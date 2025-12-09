@@ -32,7 +32,7 @@ function Footer() {
           <div className='bg-gray-100 rounded-full p-2 w-fit text-black'>
             {footer.img}
             </div>
-           <Link className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' href={footer.link} target="_blank">{footer.name}</Link>
+           <Link className='hover:text-blue-700 hover:border-b hover:border-b-blue-700 active:text-blue-700 active:border-b active:border-b-blue-700' href={footer.link} target="_blank">{footer.name}</Link>
           </div>))}
          
         </div>

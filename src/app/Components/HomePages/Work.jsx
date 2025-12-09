@@ -11,7 +11,7 @@ function Work() {
                 </p>
 
                 <a 
-                    href="#contact"
+                    href="tel:+923098841413"
                     className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-xl text-lg font-medium hover:bg-indigo-700 transition"
                 >
                     Contact Me
