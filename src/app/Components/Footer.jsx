@@ -1,5 +1,5 @@
 "use client"
-import { GitBranch, Github, GithubIcon, LinkedinIcon, LucideLinkedin, MessageCircle, PhoneCallIcon } from 'lucide-react'
+import {  Github,  LinkedinIcon, PhoneCallIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
