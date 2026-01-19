@@ -13,29 +13,29 @@ function Skills() {
         <div className='sm:text-2xl text-xl  text-gray-400 mb-4'>
             <p>Here are the technologies i use to build fast,modern , and scalable applications.</p>
         </div>
-        <div className='text-stone-300 flex justify-center  '>
+        <div className='text-stone-300 flex justify-between  '>
           <div className=''>
             <h1 className='text-xl '>Front-End Skills</h1>
-            {/* <li>Next js</li>
-            <progress className='' value="70" max='100'>70%</progress>
-            <li>React</li>
-            <li>Tailwind css</li>
-            <li>html/css/javascript</li> */}
+           
             <Progress skill={"Next js"} percentage={70} color={"red"} />
-            <Progress skill={"React js"} percentage={70} color={"yellow"} />
-            <Progress skill={"Tailwind css"} percentage={70} color={"blue"} />
-            <Progress skill={"Javascript"} percentage={70} color={"green"} />
-            <Progress skill={"html/css"} percentage={70} color={"indigo"} />
+            <Progress skill={"React js"} percentage={90} color={"yellow"} />
+            <Progress skill={"Tailwind css"} percentage={90} color={"blue"} />
+            <Progress skill={"Javascript"} percentage={80} color={"green"} />
+            <Progress skill={"html/css"} percentage={100} color={"indigo"} />
             </div>
-          {/* <div>
-            <h1 className='text-xl '>tools</h1>
-            <li>Git/Github</li>
-            <li>VS code</li>
-            <li></li>
-            <li>html/css/javascript</li>
-            </div> */}
+            <div className='mt-8'>
+              <p className="bg-yellow-400 text-black px-3 py-1 rounded-full mt-4">Git</p>
+              <p className="bg-blue-500 text-white px-3 py-1 rounded-full mt-4">VS Code</p>
+              <p className="bg-green-500 text-white px-3 py-1 rounded-full mt-4">Postman</p>
+              <p className="bg-indigo-500 text-white px-3 py-1 rounded-full mt-4">Docker</p>
+              <p className="bg-pink-500 text-white px-3 py-1 rounded-full mt-4">Figma</p>
+               </div>
+          
 
         </div>
+        <div className='sm:text-2xl text-xl  text-gray-400 mt-4'>
+            <p>I am constantly expanding my toolkit and plan to learn essential developer tools such as Postman, Docker, and Figma to further streamline my workflow and design efficient, modern applications.</p>
+          </div>
       </div>
       </div>
       </div>
