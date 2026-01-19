@@ -13,7 +13,7 @@ function Skills() {
         <div className='sm:text-2xl text-xl  text-gray-400 mb-4'>
             <p>Here are the technologies i use to build fast,modern , and scalable applications.</p>
         </div>
-        <div className='text-stone-300 flex justify-between gap-10 '>
+        <div className='text-stone-300 flex justify-center  '>
           <div className=''>
             <h1 className='text-xl '>Front-End Skills</h1>
             {/* <li>Next js</li>
