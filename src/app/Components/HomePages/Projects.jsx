@@ -16,6 +16,7 @@ function Projects() {
       dic:"A responsive blog platform with CRUD functionality, clean design, and smooth user experience using React and Tailwind CSS.",
       button:"View",
       link:"https://betagram.vercel.app/",
+      git:"https://github.com/sskhan999999999999-spec/shahblogapp"
     },
     {
       img:'/project-1.png',
@@ -24,6 +25,7 @@ function Projects() {
       dic:"My personal portfolio showcasing projects, skills, and professional UI built with Next.js and Tailwind CSS.",
       button:"View",
       scrollToHero: true, 
+      git:"https://github.com/sskhan999999999999-spec/Portfolio"
     },
     {
       img:'/Todo-app.png',
@@ -96,12 +98,16 @@ function Projects() {
 
                   <div className='flex justify-center mt-3'>
                     {project.scrollToHero ? (
+                      <div className='flex gap-5'>
                       <button
                         onClick={handleScrollToHero}
                         className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 cursor-pointer"
                       >
                         {project.button}
                       </button>
+                    <Link href={"https://github.com/sskhan999999999999-spec/Portfolio"} target='_blank' >
+                      <button className='bg-transparent rounded-lg py-2 font-medium px-8 border border-white hover:bg-blue-600 hover:text-white transition-all duration-300 hover:border-0 '>Github</button></Link>
+                      </div>
                     ) : project.openModal ? (
                       <button
                         onClick={() => handleOpenModal(project)}
@@ -110,11 +116,16 @@ function Projects() {
                         {project.button}
                       </button>
                     ) : (
+                      <div className='flex gap-5'>
                       <Link href={project.link} target="_blank" rel="noopener noreferrer">
                         <button className="px-10 py-2 bg-blue-600 rounded-lg text-white font-medium hover:bg-blue-700 transition-colors duration-300 cursor-pointer">
                           {project.button}
                         </button>
                       </Link>
+                      <Link href={"https://github.com/sskhan999999999999-spec/shahblogapp"} target='_blank'>
+                      <button className='bg-transparent rounded-lg py-2 font-medium px-8 border border-white hover:bg-blue-600 hover:text-white transition-all duration-300 hover:border-0 '>Github</button>
+                      </Link>
+                      </div>
                     )}
                   </div>
                 </div>
