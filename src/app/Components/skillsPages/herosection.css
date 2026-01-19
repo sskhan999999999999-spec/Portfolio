@@ -1,0 +1,30 @@
+.slide-from-top{
+    animation: slideTop 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.slide-from-bottom{
+    animation: slideBottom 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform:  translateY(0);
+        opacity: 1;
+    }
+}

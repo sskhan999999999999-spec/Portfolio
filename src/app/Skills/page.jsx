@@ -1,4 +1,6 @@
 import React from 'react'
+import HeroSection from '../Components/skillsPages/HeroSection';
+import Skills from '../Components/skillsPages/Skills';
 
 export const metadata = {
   title: "Skills",
@@ -9,11 +11,8 @@ export const metadata = {
 function Project() {
     return (  
         <div>
-          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
-          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
-          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
-          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
-          <h1 className='text-4xl text-red-600 bg-red-900'>this is how are you  my personl pages </h1>
+         <HeroSection/>
+         <Skills/>
         </div>
 
     )

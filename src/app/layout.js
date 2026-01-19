@@ -48,7 +48,7 @@ export const metadata = {
     images: ["/my-photo.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    // icon: "/favicon.ico",
   },
 };
 
