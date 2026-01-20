@@ -1,5 +1,5 @@
 "use client"
-import {  Github,  LinkedinIcon, PhoneCallIcon } from 'lucide-react'
+import {  Github,  LinkedinIcon, LucidePhoneCall, MessageCircle, PhoneCallIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -20,12 +20,18 @@ function Footer() {
       name:'phone',
       link:"tel:+923098841413"
     },
+    {
+      img:<MessageCircle/>,
+      name:"whatsapp",
+      link:"https://wa.me/923098841413?text=Hello%20I%20saw%20your%20portfolio"
+
+    }
   ]
   return (
     <div>
       <div className='bg-gray-900 text-gray-300 p-6 '>
       <div className='sm:flex    sm:justify-between px-5 items-center sm:gap-2  '>
-        <p className='mb-3'>© 2025 Shah Sawar. All rights reserved.</p>
+        <p className='mb-3'>© 2026 Shah Sawar. All rights reserved.</p>
         <p className='mb-3'>Frontend Developer • React • Next.js</p>
         <div className='flex justify-around gap-5'>
           {footers.map((footer,idx)=>(<div key={idx}>

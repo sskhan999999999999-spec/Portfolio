@@ -4,7 +4,7 @@ import Progress from './Progress'
 function Skills() {
   return (
     <div>
-      <div className='bg-teal-800  flex justify-center p-5 '>
+      <div className='bg-teal-800  flex justify-center p-15 '>
         <div className='flex justify-center '>
         <div className='max-w-3xl '>
         <div className='sm:text-5xl  text-2xl text-white mb-4  '>
@@ -23,12 +23,13 @@ function Skills() {
             <Progress skill={"Javascript"} percentage={80} color={"green"} />
             <Progress skill={"html/css"} percentage={100} color={"indigo"} />
             </div>
-            <div className='mt-8'>
-              <p className="bg-yellow-400 text-black px-3 py-1 rounded-full mt-4">Git</p>
-              <p className="bg-blue-500 text-white px-3 py-1 rounded-full mt-4">VS Code</p>
-              <p className="bg-green-500 text-white px-3 py-1 rounded-full mt-4">Postman</p>
-              <p className="bg-indigo-500 text-white px-3 py-1 rounded-full mt-4">Docker</p>
-              <p className="bg-pink-500 text-white px-3 py-1 rounded-full mt-4">Figma</p>
+            <div className=' flex-col items-center justify-center'>
+              <h1 className='text-xl ml-3'>Tools</h1>
+              <p className="bg-yellow-400 text-black px-3 py-1 rounded-full mt-2 text-center">Git</p>
+              <p className="bg-blue-500 text-white px-3 py-1 rounded-full mt-4 text-center">VS Code</p>
+              <p className="bg-green-500 text-white px-3 py-1 rounded-full mt-4 text-center">Postman</p>
+              <p className="bg-indigo-500 text-white px-3 py-1 rounded-full mt-4 text-center">Docker</p>
+              <p className="bg-pink-500 text-white px-3 py-1 rounded-full mt-4 text-center">Figma</p>
                </div>
           
 

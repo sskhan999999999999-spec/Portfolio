@@ -13,7 +13,7 @@
 
     const linkClass = (path)=>
     pathName === path ?
-    "border-b-3 border-blue-600 text-blue-600 p-2 ":" hover:text-blue-600 hover:border-blue-600 hover:border-b-3 hover:p-2 "
+    "border-b-3 border-blue-600 text-blue-600 pb-2 w-full ":" hover:text-blue-600 hover:border-blue-600 hover:border-b-3 hover:pb-2 w-full  "
         
     return (
            <div>
@@ -30,7 +30,7 @@
                     <li><Link href="Skills" className={linkClass("/Skills")}>Skills</Link></li>
                   </ul>
                     </div>
-                     <li className='list-none hidden sm:flex '><button className=' text-white bg-indigo-500  text-xl  hover:bg-indigo-600 hover:border-indigo-700 duration-300 hover:text-white transition-colors py-2 px-4 rounded-full cursor-pointer'>contact</button></li>
+                     <li className='list-none hidden sm:flex '><a href="tel:+923098841413"><button  className=' text-white bg-indigo-500  text-xl  hover:bg-indigo-600 hover:border-indigo-700 duration-300 hover:text-white transition-colors py-2 px-4 rounded-full cursor-pointer'>contact</button></a></li>
              </nav>
              {open && (
             <div

@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from '../Components/skillsPages/HeroSection';
 import Skills from '../Components/skillsPages/Skills';
+import Journey from '../Components/skillsPages/Journey';
 
 export const metadata = {
   title: "Skills",
@@ -13,6 +14,7 @@ function Project() {
         <div>
          <HeroSection/>
          <Skills/>
+         <Journey/>
         </div>
 
     )
