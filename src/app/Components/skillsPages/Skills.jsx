@@ -19,13 +19,13 @@ function Skills() {
            
             <Progress skill={"Next js"} percentage={70} color={"red"} />
             <Progress skill={"React js"} percentage={90} color={"yellow"} />
-            <Progress skill={"Tailwind css"} percentage={90} color={"blue"} />
+            <Progress skill={"Tailwindcss"} percentage={90} color={"blue"} />
             <Progress skill={"Javascript"} percentage={80} color={"green"} />
             <Progress skill={"html/css"} percentage={100} color={"indigo"} />
             </div>
             <div className=' flex-col items-center justify-center'>
               <h1 className='text-xl ml-3'>Tools</h1>
-              <p className="bg-yellow-400 text-black px-3 py-1 rounded-full mt-2 text-center">Git</p>
+              <p className="bg-yellow-400 text-black px-3 py-1 rounded-full mt-15 sm:mt-2 text-center">Git</p>
               <p className="bg-blue-500 text-white px-3 py-1 rounded-full mt-4 text-center">VS Code</p>
               <p className="bg-green-500 text-white px-3 py-1 rounded-full mt-4 text-center">Postman</p>
               <p className="bg-indigo-500 text-white px-3 py-1 rounded-full mt-4 text-center">Docker</p>
