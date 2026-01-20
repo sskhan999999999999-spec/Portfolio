@@ -2,7 +2,7 @@ import React from 'react'
 
 function Journey() {
   return (
-    <div className='bg-indigo-300 h-100 p-15 '>
+    <div className='bg-indigo-300  p-15 '>
 
         <div className='flex justify-center  '>
         <div className='w-full max-w-3xl'>
