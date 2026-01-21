@@ -13,7 +13,7 @@ function Skills() {
         <div className='sm:text-2xl text-xl  text-gray-400 mb-4'>
             <p>Here are the technologies i use to build fast,modern , and scalable applications.</p>
         </div>
-        <div className='text-stone-300 flex justify-between  '>
+        <div className='text-stone-300 flex justify-between gap-5  '>
           <div className=''>
             <h1 className='text-xl '>Front-End Skills</h1>
            
@@ -24,7 +24,7 @@ function Skills() {
             <Progress skill={"html/css"} percentage={100} color={"indigo"} />
             </div>
             <div className=' flex-col items-center justify-center'>
-              <h1 className='text-xl ml-3'>Tools</h1>
+              <h1 className='text-xl mt-3'>Tools</h1>
               <p className="bg-yellow-400 text-black px-3 py-1 rounded-full mt-10 sm:mt-2 text-center">Git</p>
               <p className="bg-blue-500 text-white px-3 py-1 rounded-full mt-4 text-center">VS Code</p>
               <p className="bg-green-500 text-white px-3 py-1 rounded-full mt-4 text-center">Postman</p>
