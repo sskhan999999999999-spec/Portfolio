@@ -4,7 +4,7 @@ import Progress from './Progress'
 function Skills() {
   return (
     <div>
-      <div className='bg-teal-800  flex justify-center p-15 '>
+      <div className='bg-teal-800  flex justify-center p-20 '>
         <div className='flex justify-center '>
         <div className='max-w-3xl '>
         <div className='sm:text-5xl  text-2xl text-white mb-4  '>

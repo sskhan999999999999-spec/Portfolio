@@ -1,4 +1,6 @@
   import React from 'react'
+import HeroSection from '../Components/About/HeroSection';
+import Second from '../Components/About/Second';
   
   export const metadata = {
   title: "About | Shah Sawar",
@@ -8,7 +10,8 @@
   function About () {
     return (
           <div>
-              <h1> This is  about page hello wrold is itaoioudahofan</h1>
+              <HeroSection/>
+              <Second/>
           </div>
     )
   }

@@ -3,8 +3,8 @@ import './herosection.css';
 
 function HeroSection() {
   return (
-    <div className="bg-indigo-100 px-6 mt-10 sm:px-12 md:px-20 py-12 sm:py-20  flex justify-center">
-      <div className='mx-auto '>
+    <div className="bg-indigo-100  mt-15 py-15  px-15  flex justify-center">
+      <div className='max-w-3xl '>
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-linear-to-bl from-blue-500 to-purple-500 mb-6 md:mb-8 slide-from-top   ">
         Where Curiosity Meets Code
       </h1>

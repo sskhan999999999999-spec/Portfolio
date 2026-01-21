@@ -17,7 +17,7 @@
         
     return (
            <div>
-             <nav className=' bg-slate-900 p-4 w-full text-white flex justify-between text-2xl items-center top-0  fixed z-10000000 px-6 sm:flex sm:justify-around '>
+             <nav className=' bg-slate-900 p-4 w-full text-white flex justify-between  text-2xl items-center top-0  fixed z-10000000 px-6 sm:flex sm:justify-around '>
                   <button className='sm:hidden flex' onClick={()=>setOpen(!open)}>
                      <Menu/>
                      </button>
