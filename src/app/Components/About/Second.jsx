@@ -25,7 +25,7 @@ function Second() {
     <div className='bg-teal-700 p-15 flex justify-center '>
         <div >
       <div className='mb-6'>
-        <h1 className='text-gray-900 font-bold sm:text-5xl text-2xl'>Development Mindset </h1>
+        <h1 className='text-white/80 font-bold sm:text-5xl text-2xl'>Development Mindset </h1>
       </div>
       <div className='grid sm:grid-cols-3 md:grid-cols-4 gap-6 grid-cols-1'>
 
