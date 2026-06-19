@@ -1,3 +1,4 @@
+import About from "./Components/HomePages/About";
 import HeroSection from "./Components/HomePages/HeroSection";
 import Projects from "./Components/HomePages/Projects";
 import SkillsSection from "./Components/HomePages/SkillsSection";
@@ -11,11 +12,11 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-linear-to-br from-[#0a0b1e] to-[#253556] text-[#e0e3e5] w-full">
       <HeroSection />
       <SkillsSection />
-      <Projects/>
-      <Work/>
+      <About/>
+      {/* <Work/> */}
     </div>
   );
 }

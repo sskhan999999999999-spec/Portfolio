@@ -1,60 +1,98 @@
-    "use client"
-    import React, { useState } from 'react'
-    import Link from 'next/link'
-    import { usePathname } from 'next/navigation'
-    import {  Menu } from 'lucide-react'
-   
+"use client"
+import React, { useEffect, useState } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { Menu } from "lucide-react"
 
-   
-   
-   function Navbar() {
-    const pathName = usePathname()
-    const [open,setOpen] = useState(false)
+function Navbar() {
+  const pathname = usePathname()
+  const [open, setOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
-    const linkClass = (path)=>
-    pathName === path ?
-    "border-b-3 border-blue-600 text-blue-600 pb-2 w-full ":" hover:text-blue-600 hover:border-blue-600 hover:border-b-3 hover:pb-2 w-full  "
-        
-    return (
-           <div>
-             <nav className=' bg-slate-900 p-4 w-full text-white flex justify-between  text-2xl items-center top-0  fixed z-10000000 px-6 sm:flex sm:justify-around '>
-                  <button className='sm:hidden flex' onClick={()=>setOpen(!open)}>
-                     <Menu/>
-                     </button>
-                    <div className='font-bold sm:text-3xl text-white'><h1>Portfolio</h1></div>
-                    <div className='sm:flex justify-around items-center hidden '>
-                  <ul className=' text-xl sm:flex sm:justify-center  gap-x-10 items-center hidden  '>
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
-                    <li> <Link href="/" className={linkClass("/")}>Home</Link> </li>
-                    <li> <Link href="About" className={linkClass("/About")}>About</Link></li>
-                    <li><Link href="Skills" className={linkClass("/Skills")}>Skills</Link></li>
-                  </ul>
-                    </div>
-                     <li className='list-none hidden sm:flex '><a href="tel:+923098841413"><button  className=' text-white bg-indigo-500  text-xl  hover:bg-indigo-600 hover:border-indigo-700 duration-300 hover:text-white transition-colors py-2 px-4 rounded-full cursor-pointer'>contact</button></a></li>
-             </nav>
-             {open && (
-            <div
-              className="fixed inset-0 bg-black/40 z-40"
-              onClick={() => setOpen(false)}
-            ></div>
-          )}
-                            <div
-                    className={`fixed top-0 left-0 h-full w-64 bg-slate-900 p-6 z-50 
-                    transform ${open ? "translate-x-0" : "-translate-x-full"} 
-                    transition-transform duration-300`}
-                  >
-                    <ul className="flex flex-col gap-6 text-xl mt-10 text-white">
-                      <Link href="/" onClick={() => setOpen(false)}>Home</Link>
-                      <Link href="/About" onClick={() => setOpen(false)}>About</Link>
-                      <Link href="/Skills" onClick={() => setOpen(false)}>Skills</Link>
-                      {/* <Link href="/Contact" onClick={() => setOpen(false)}>Contact</Link> */}
-                    </ul>
-                  </div>
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") setOpen(false)
+    }
+    window.addEventListener("keydown", handleEsc)
+    return () => window.removeEventListener("keydown", handleEsc)
+  }, [])
 
+  if (!mounted) return null
 
-             </div>
-    )
-   }
-   
-   export default Navbar
-   
+  const linkClass = (path) =>
+    pathname === path
+      ? "border-b border-[#e0e3e5] pb-1 transition-all"
+      : "hover:border-b hover:border-[#e0e3e5] transition-all"
+
+  return (
+    <>
+      {/* NAVBAR */}
+      <nav className="fixed top-0 w-full z-50 bg-[#101415]/30 backdrop-blur-xl border-b border-white/10 text-[#E0E3E5]">
+
+        <div className="flex items-center justify-between px-4 sm:px-10 lg:px-20 py-4">
+
+           {/* LOGO */}
+          <div className="font-bold text-lg">
+            Shahsawar
+          </div>
+
+          {/* MENU ICON */}
+          <button
+            className="sm:hidden"
+            onClick={() => setOpen(true)}
+          >
+            <Menu />
+          </button>
+
+         
+
+          {/* DESKTOP LINKS */}
+          <div className="hidden sm:flex items-center gap-8">
+
+            <ul className="flex gap-10 text-sm">
+              <li><Link href="/" className={linkClass("/")}>Home</Link></li>
+              <li><Link href="/About" className={linkClass("/About")}>About</Link></li>
+              <li><Link href="/Skills" className={linkClass("/Skills")}>Skills</Link></li>
+            </ul>
+
+            <a href="tel:+923098841413">
+              <button className="px-6 py-2 rounded-full text-sm font-semibold bg-linear-to-r from-[#2e5bff] to-[#00d2ff] hover:scale-105 transition-all hover:shadow-[0_5px_15px_rgba(46,91,255,0.4),0_0_20px_rgba(0,210,255,0.3)]">
+                Contact
+              </button>
+            </a>
+
+          </div>
+        </div>
+      </nav>
+
+      {/* OVERLAY */}
+      <div
+        onClick={() => setOpen(false)}
+        className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${
+          open ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      />
+
+      {/* MOBILE DRAWER */}
+      <div
+        className={`fixed top-0 left-0 h-full w-72 bg-slate-900 z-50 p-6 transform transition-transform duration-300 ${
+          open ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="flex flex-col gap-6 mt-10 text-white text-lg">
+
+          <Link href="/" onClick={() => setOpen(false)}>Home</Link>
+          <Link href="/About" onClick={() => setOpen(false)}>About</Link>
+          <Link href="/Skills" onClick={() => setOpen(false)}>Skills</Link>
+
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Navbar

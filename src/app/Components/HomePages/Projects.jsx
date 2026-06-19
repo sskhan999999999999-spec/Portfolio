@@ -71,7 +71,7 @@ function Projects() {
   return (
     <div>
       {/* Projects Section */}
-      <div className='bg-linear-to-r from-blue-600 to-purple-500 w-full p-10'>
+      <div className=' w-full pt-[120px]'>
         <h1 className="text-4xl font-semibold text-white sm:pl-20 md:pl-30 text-center sm:text-left pt-10">
           <span className="border-b-4 border-white p-3">Projects</span>
         </h1>
