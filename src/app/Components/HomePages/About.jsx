@@ -123,7 +123,7 @@ export default function AboutGrid() {
               font-bold
               text-[#c9ccff]
               ">
-                3+
+                1+
               </h1>
 
 
