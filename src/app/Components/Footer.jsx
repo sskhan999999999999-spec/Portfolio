@@ -29,7 +29,7 @@ function Footer() {
   ]
   return (
     <div>
-      <div className='bg-gray-900 text-gray-300 p-6 '>
+      <div className='bg-[#101415] text-gray-300 p-6 '>
       <div className='sm:flex    sm:justify-between px-5 items-center sm:gap-2  '>
         <p className='mb-3'>© 2026 Shah Sawar. All rights reserved.</p>
         <p className='mb-3'>Frontend Developer • React • Next.js</p>
