@@ -12,13 +12,13 @@ export default function AboutGrid() {
 
 
   const cardStyle =
-    "rounded-2xl border border-[rgba(255,255,255,0.1)] bg-[#111426]/70 backdrop-blur-md transition-all hover:bg-[#ffffff08] duration-300 hover:-translate-y-1 hover:border-[#2e5bff] hover:shadow-[0_10px_35px_rgba(46,91,255,0.18)]"
+    "rounded-2xl border  border-[rgba(255,255,255,0.1)] bg-[#111426]/70 backdrop-blur-md transition-all hover:bg-[#ffffff08] duration-300 hover:-translate-y-1 hover:border-[#2e5bff] hover:shadow-[0_10px_35px_rgba(46,91,255,0.18)]"
 
 
 
   return (
 
-    <section className="min-h-screen px-5 pt-[120px]">
+    <section className="min-h-screen px-5 py-[120px]">
 
       <div className="max-w-6xl mx-auto">
 
