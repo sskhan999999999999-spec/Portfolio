@@ -25,7 +25,7 @@ export default function KnowledgeDistribution() {
 
 
   return (
-    <div className="py-[120px]">
+    <div className="py-[120px] px-4">
     <div className="
       w-full
       max-w-6xl
@@ -33,7 +33,7 @@ export default function KnowledgeDistribution() {
       rounded-2xl
       border
       border-white/5
-      hover:border-[#2e5bff] 
+      hover:border-[#2e5bff]  
       bg-[#ffffff08]
       hover:shadow-[0_3px_10px_rgba(46,91,255,0.15)]
       transition-all
