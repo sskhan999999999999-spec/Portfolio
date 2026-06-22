@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { Github, ArrowUpRight } from "lucide-react"
+import { motion } from "framer-motion"
 
 
 const projects = [
@@ -20,7 +21,6 @@ const projects = [
 ]
 
 
-
 export default function Projects(){
 
 
@@ -29,10 +29,14 @@ return (
 <section className="bg-[#0b0d10] px-5 py-24">
 
 
-<div className="max-w-6xl mx-auto">
+<motion.div
+initial={{opacity:0,y:80}}
+whileInView={{opacity:1,y:0}}
+viewport={{once:true}}
+transition={{duration:0.8}}
+className="max-w-6xl mx-auto"
+>
 
-
-{/* Header */}
 
 <header className="flex flex-col md:flex-row justify-between items-center mb-14 gap-6">
 
@@ -46,9 +50,7 @@ Featured Work
 
 <h2 className="mt-4 text-3xl md:text-5xl font-bold text-white">
 Projects I've
-<span className="text-indigo-400">
- {" "}built
-</span>
+<span className="text-indigo-400"> built</span>
 </h2>
 
 
@@ -60,22 +62,7 @@ Projects I've
 <a
 href="https://github.com/yourusername"
 target="_blank"
-className="
-flex
-items-center
-gap-2
-px-5
-py-3
-rounded-xl
-border
-border-white/10
-bg-white/5
-backdrop-blur-md
-text-white
-hover:bg-white/10
-hover:border-indigo-400/40
-transition
-"
+className="flex items-center gap-2 px-5 py-3 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md text-white hover:bg-white/10 hover:border-indigo-400/40 transition"
 >
 
 <Github size={18}/>
@@ -85,42 +72,28 @@ View All Projects
 </a>
 
 
-
 </header>
 
 
 
 
 
-{/* Cards */}
-
 <div className="grid md:grid-cols-2 gap-7">
-
 
 
 {
 projects.map((project,index)=>(
 
 
-<article
+<motion.article
 key={index}
-className="
-group
-rounded-3xl
-overflow-hidden
-border
-border-white/10
-bg-[#111318]
-hover:border-indigo-500/40
-transition-all
-duration-300
-hover:-translate-y-2
-"
+initial={{opacity:0,y:60}}
+whileInView={{opacity:1,y:0}}
+viewport={{once:true}}
+transition={{duration:0.7,delay:index*0.2}}
+className="group rounded-3xl overflow-hidden border border-white/10 bg-[#111318] hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-2"
 >
 
-
-
-{/* Image */}
 
 <div className="relative h-[280px] overflow-hidden">
 
@@ -129,24 +102,12 @@ hover:-translate-y-2
 src={project.image}
 alt={project.title}
 fill
-className="
-object-cover
-group-hover:scale-105
-transition
-duration-500
-"
+className="object-cover group-hover:scale-105 transition duration-500"
 />
 
 
 
-<div className="
-absolute
-inset-0
-bg-linear-to-t
-from-[#111318]
-via-transparent
-"
-/>
+<div className="absolute inset-0 bg-linear-to-t from-[#111318] via-transparent"></div>
 
 
 </div>
@@ -155,37 +116,18 @@ via-transparent
 
 
 
-
-{/* Content */}
-
 <div className="p-7">
 
 
-<h3 className="
-text-2xl
-font-bold
-text-white
-group-hover:text-indigo-300
-transition
-">
-
+<h3 className="text-2xl font-bold text-white group-hover:text-indigo-300 transition">
 {project.title}
-
 </h3>
 
 
 
-<p className="
-mt-3
-text-[#9ca3af]
-leading-7
-text-sm
-">
-
+<p className="mt-3 text-[#9ca3af] leading-7 text-sm">
 {project.desc}
-
 </p>
-
 
 
 
@@ -198,22 +140,12 @@ project.tech.map((item)=>(
 
 <span
 key={item}
-className="
-px-3
-py-1
-rounded-full
-bg-white/5
-border
-border-white/10
-text-xs
-text-gray-300
-"
+className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300"
 >
 
 {item}
 
 </span>
-
 
 ))
 }
@@ -228,16 +160,7 @@ text-gray-300
 <a
 href="https://github.com/yourusername"
 target="_blank"
-className="
-inline-flex
-items-center
-gap-2
-mt-7
-text-sm
-text-indigo-400
-hover:text-indigo-300
-transition
-"
+className="inline-flex items-center gap-2 mt-7 text-sm text-indigo-400 hover:text-indigo-300 transition"
 >
 
 Github Code
@@ -252,20 +175,17 @@ Github Code
 
 
 
-
-</article>
+</motion.article>
 
 
 ))
 }
 
 
-
 </div>
 
 
-
-</div>
+</motion.div>
 
 
 </section>

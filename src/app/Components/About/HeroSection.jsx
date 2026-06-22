@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { Github, Linkedin, Mail } from "lucide-react"
+import { motion } from "framer-motion"
 
 
 export default function AboutProfile() {
@@ -10,17 +11,30 @@ export default function AboutProfile() {
 
     <section className="bg-[#0b0d10] px-5 py-24">
 
-      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center"
+      >
 
 
         {/* Image Section */}
 
-        <figure className="relative group flex justify-center">
+        <motion.figure
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative group flex justify-center"
+        >
 
           <div className="absolute w-[300px] h-[300px] bg-indigo-500/20 blur-[100px] rounded-full"></div>
 
 
           <div className="relative w-[260px] h-[330px] sm:w-[320px] sm:h-[400px] md:w-[360px] md:h-[450px] rounded-3xl overflow-hidden border border-white/10 bg-[#111318]">
+
 
             <Image
               src="/my-photo.jpg"
@@ -30,9 +44,12 @@ export default function AboutProfile() {
               className="object-cover group-hover:scale-105 transition-all duration-500"
             />
 
+
           </div>
 
-        </figure>
+
+        </motion.figure>
+
 
 
 
@@ -40,12 +57,19 @@ export default function AboutProfile() {
 
         {/* Content Section */}
 
-        <article>
+
+        <motion.article
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
 
 
           <span className="text-xs tracking-[0.3em] uppercase text-indigo-400 font-bold">
             Who I Am
           </span>
+
 
 
 
@@ -73,12 +97,14 @@ export default function AboutProfile() {
 
 
 
+
           <p className="mt-4 text-[#9ca3af] leading-8 text-sm md:text-base">
 
             My goal is to transform complex problems into simple,
             elegant solutions using modern technologies.
 
           </p>
+
 
 
 
@@ -95,11 +121,13 @@ export default function AboutProfile() {
 
 
 
+
             <a className="w-11 h-11 rounded-xl bg-[#171a21] border border-white/10 text-gray-300 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500/50 hover:-translate-y-1 transition">
 
               <Linkedin size={20}/>
 
             </a>
+
 
 
 
@@ -113,10 +141,12 @@ export default function AboutProfile() {
           </nav>
 
 
-        </article>
+
+        </motion.article>
 
 
-      </div>
+
+      </motion.div>
 
 
     </section>
