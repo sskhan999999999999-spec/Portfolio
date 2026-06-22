@@ -18,79 +18,39 @@ export default function AboutGrid() {
 
   return (
 
-    <section className="min-h-screen px-5 py-[120px]">
+    <section className="min-h-screen px-5 pt-[120px]">
 
       <div className="max-w-6xl mx-auto">
 
 
-        <div className="
-          grid
-          grid-cols-1
-          md:grid-cols-4
-          gap-5
-        ">
-
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
 
 
           {/* BIG CARD */}
 
           <div
-          className={`
-          ${cardStyle}
-          relative
-          overflow-hidden
-          md:col-span-2
-          min-h-[330px]
-          p-8
-          `}
+          className={`${cardStyle} relative overflow-hidden md:col-span-2 min-h-[330px] p-8`}
           >
 
             <Image
               src="/processor.png"
               alt="processor"
               fill
-              className="
-              object-cover
-              opacity-20
-              "
+              className="object-cover opacity-20"
             />
 
 
-            <div className="
-              absolute
-              inset-0
-              bg-linear-to-t
-              from-[#090b18]
-              via-transparent
-            " />
+            <div className="absolute inset-0 bg-linear-to-t from-[#090b18] via-transparent" />
 
 
-            <div className="
-              relative
-              z-10
-              h-full
-              flex
-              flex-col
-              justify-end
-            ">
+            <div className="relative z-10 h-full flex flex-col justify-end">
 
-              <h2 className="
-              text-white
-              text-2xl
-              md:text-3xl
-              font-bold
-              mb-4
-              ">
+              <h2 className="text-white text-2xl md:text-3xl font-bold mb-4">
                 Creative Problem Solver
               </h2>
 
 
-              <p className="
-              text-[#a5a9c4]
-              text-sm
-              md:text-base
-              leading-relaxed
-              ">
+              <p className="text-[#a5a9c4] text-sm md:text-base leading-relaxed">
                 I transform complex requirements into intuitive digital
                 experiences. My approach blends engineering rigor with
                 design sensitivity to create products that people love to use.
@@ -103,37 +63,20 @@ export default function AboutGrid() {
 
 
 
-
           {/* EXPERIENCE */}
 
           <div
-          className={`
-          ${cardStyle}
-          min-h-[330px]
-          flex
-          items-center
-          justify-center
-          `}
+          className={`${cardStyle} min-h-[330px] flex items-center justify-center`}
           >
 
             <div className="text-center">
 
-              <h1 className="
-              text-5xl
-              font-bold
-              text-[#c9ccff]
-              ">
+              <h1 className="text-5xl font-bold text-[#c9ccff]">
                 1+
               </h1>
 
 
-              <p className="
-              mt-3
-              text-xs
-              font-bold
-              tracking-[0.18em]
-              text-[#777b9c]
-              ">
+              <p className="mt-3 text-xs font-bold tracking-[0.18em] text-[#777b9c]">
                 YEARS EXPERIENCE
               </p>
 
@@ -145,38 +88,21 @@ export default function AboutGrid() {
 
 
 
-
           {/* PROJECTS */}
 
           <div
-          className={`
-          ${cardStyle}
-          min-h-[330px]
-          flex
-          items-center
-          justify-center
-          `}
+          className={`${cardStyle} min-h-[330px] flex items-center justify-center`}
           >
 
             <div className="text-center">
 
 
-              <h1 className="
-              text-5xl
-              font-bold
-              text-[#c9ccff]
-              ">
+              <h1 className="text-5xl font-bold text-[#c9ccff]">
                 50+
               </h1>
 
 
-              <p className="
-              mt-3
-              text-xs
-              font-bold
-              tracking-[0.18em]
-              text-[#777b9c]
-              ">
+              <p className="mt-3 text-xs font-bold tracking-[0.18em] text-[#777b9c]">
                 PROJECTS DELIVERED
               </p>
 
@@ -194,38 +120,18 @@ export default function AboutGrid() {
 
 
           <div
-          className={`
-          ${cardStyle}
-          md:col-span-2
-          min-h-[170px]
-          p-8
-          flex
-          flex-col
-          sm:flex-row
-          items-start
-          sm:items-center
-          justify-between
-          gap-5
-          `}
+          className={`${cardStyle} md:col-span-2 min-h-[170px] p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5`}
           >
 
 
             <div>
 
-              <h3 className="
-              text-white
-              text-xl
-              font-bold
-              ">
+              <h3 className="text-white text-xl font-bold">
                 Modern Tech Stack
               </h3>
 
 
-              <p className="
-              text-[#8c91b0]
-              text-sm
-              mt-2
-              ">
+              <p className="text-[#8c91b0] text-sm mt-2">
                 Always learning, always evolving.
               </p>
 
@@ -239,24 +145,10 @@ export default function AboutGrid() {
 
               {
                 tech.map((item)=>(
-                  
+
                   <div
                   key={item.id}
-                  className="
-                  w-12
-                  h-12
-                  rounded-full
-                  bg-[#171a2d]
-                  border
-                  border-white/10
-                  flex
-                  items-center
-                  justify-center
-                  text-lg
-                  transition
-                  hover:bg-[#2e5bff]
-                  hover:scale-110
-                  "
+                  className="w-12 h-12 rounded-full bg-[#171a2d] border border-white/10 flex items-center justify-center text-lg transition hover:bg-[#2e5bff] hover:scale-110"
                   >
 
                     {item.icon}

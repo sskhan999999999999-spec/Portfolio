@@ -11,7 +11,7 @@ export const metadata = {
 
 function Project() {
     return (  
-        <div>
+        <div className='bg-[#101415]'>
          <HeroSection/>
          <Skills/>
          <Journey/>

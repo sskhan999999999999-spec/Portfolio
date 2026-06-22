@@ -1,6 +1,7 @@
   import React from 'react'
 import HeroSection from '../Components/About/HeroSection';
 import Second from '../Components/About/Second';
+import Projects from '../Components/About/Projects';
   
   export const metadata = {
   title: "About | Shah Sawar",
@@ -12,6 +13,7 @@ import Second from '../Components/About/Second';
           <div>
               <HeroSection/>
               <Second/>
+              <Projects/>
           </div>
     )
   }

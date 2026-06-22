@@ -1,21 +1,125 @@
-import React from 'react'
+"use client"
 
-function HeroSection() {
+import Image from "next/image"
+import { Github, Linkedin, Mail } from "lucide-react"
+
+
+export default function AboutProfile() {
+
   return (
-    <div className='bg-indigo-100  mt-15 py-20 px-6 sm:px-15 '>
-      <div className='flex justify-center  '>
-        <div className='max-w-3xl'>
-        <h1 className='capitalize   text-indigo-500 font-bold sm:text-5xl mb-6 text-2xl '>A little more about me</h1>
-        <h2 className='sm:text-2xl text-xl text-gray-500'>React Developer building modern, scalable, and user-focused web experiences.</h2>
-        <div>
-            <p>I’m a React Developer who believes that great user experiences are built with clean code, thoughtful design, and attention to detail.</p>
-            <p>I enjoy creating modern, responsive web applications that are not only visually appealing but also performant and scalable. My focus is on writing maintainable code and building interfaces that feel simple, fast, and intuitive.</p>
-            <p>Currently, I am learning at AntonX, I actively contribute to real-world projects while continuously sharpening my skills and staying up to date with modern front-end technologies. I’m always motivated to learn, grow, and turn ideas into impactful digital products.</p>
-        </div>
-        </div>
+
+    <section className="bg-[#0b0d10] px-5 py-24">
+
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+
+        {/* Image Section */}
+
+        <figure className="relative group flex justify-center">
+
+          <div className="absolute w-[300px] h-[300px] bg-indigo-500/20 blur-[100px] rounded-full"></div>
+
+
+          <div className="relative w-[260px] h-[330px] sm:w-[320px] sm:h-[400px] md:w-[360px] md:h-[450px] rounded-3xl overflow-hidden border border-white/10 bg-[#111318]">
+
+            <Image
+              src="/my-photo.jpg"
+              alt="Developer profile"
+              fill
+              priority
+              className="object-cover group-hover:scale-105 transition-all duration-500"
+            />
+
+          </div>
+
+        </figure>
+
+
+
+
+
+        {/* Content Section */}
+
+        <article>
+
+
+          <span className="text-xs tracking-[0.3em] uppercase text-indigo-400 font-bold">
+            Who I Am
+          </span>
+
+
+
+          <h2 className="mt-5 text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+
+            Turning ideas into
+
+            <span className="text-indigo-400">
+              {" "}powerful web experiences
+            </span>
+
+          </h2>
+
+
+
+
+          <p className="mt-6 text-[#9ca3af] leading-8 text-sm md:text-base">
+
+            I am a passionate developer who enjoys building modern,
+            scalable and user-friendly applications. I focus on clean
+            architecture, performance and creating smooth digital
+            experiences.
+
+          </p>
+
+
+
+          <p className="mt-4 text-[#9ca3af] leading-8 text-sm md:text-base">
+
+            My goal is to transform complex problems into simple,
+            elegant solutions using modern technologies.
+
+          </p>
+
+
+
+
+
+          <nav className="flex gap-4 mt-8">
+
+
+            <a className="w-11 h-11 rounded-xl bg-[#171a21] border border-white/10 text-gray-300 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500/50 hover:-translate-y-1 transition">
+
+              <Github size={20}/>
+
+            </a>
+
+
+
+            <a className="w-11 h-11 rounded-xl bg-[#171a21] border border-white/10 text-gray-300 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500/50 hover:-translate-y-1 transition">
+
+              <Linkedin size={20}/>
+
+            </a>
+
+
+
+            <a className="w-11 h-11 rounded-xl bg-[#171a21] border border-white/10 text-gray-300 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500/50 hover:-translate-y-1 transition">
+
+              <Mail size={20}/>
+
+            </a>
+
+
+          </nav>
+
+
+        </article>
+
+
       </div>
-    </div>
+
+
+    </section>
+
   )
 }
-
-export default HeroSection

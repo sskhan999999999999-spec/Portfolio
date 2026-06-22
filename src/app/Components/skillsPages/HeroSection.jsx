@@ -1,21 +1,31 @@
 import React from 'react';
-import './herosection.css';
 
-function HeroSection() {
+export default function ExpertiseHeader() {
   return (
-    <div className="bg-indigo-100  mt-15 py-15  px-15  flex justify-center">
-      <div className='max-w-3xl '>
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-linear-to-bl from-blue-500 to-purple-500 mb-6 md:mb-8 slide-from-top   ">
-        Where Curiosity Meets Code
-      </h1>
-      
-        <p className="text-gray-500 text-base sm:text-lg md:text-xl leading-relaxed sm:max-w-xl md:max-w-2xl slide-from-bottom">
-          Every line of code I write comes from a mindset that never stops exploring. My skillset isn’t just a list of tools—it’s a collection of experiences, challenges, experiments, and late-night breakthroughs that shaped me as a developer. From crafting smooth interfaces to engineering reliable backend systems, I use each technology with one goal in mind: creating digital experiences that feel effortless, intuitive, and built with intention. Here’s a curated look at the tools, frameworks, and technologies that fuel my creativity and help me turn ideas into meaningful, functional products.
+    <header className=" text-gray-300 py-12 md:py-[120px] px-6 sm:px-8 lg:px-12 w-full font-sans selection:bg-purple-500 selection:text-white">
+      <div className="max-w-7xl mx-auto flex flex-col items-start text-left">
+        
+        {/* Badge / Top Line */}
+        <div className="flex items-center gap-3 mb-5 group">
+          <span className="w-8 h-0.5 bg-indigo-500 inline-block transition-all duration-300 group-hover:w-12"></span>
+          <span className="text-indigo-400 text-xs sm:text-sm font-semibold tracking-wider uppercase">
+            Expertise & Technologies
+          </span>
+        </div>
+        
+        {/* Main Heading */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight mb-6 max-w-4xl">
+          Architecting Digital Excellence <br className="hidden sm:inline" />
+          Through <span className="italic font-serif text-transparent bg-clip-text bg-linear-to-r from-indigo-300 via-purple-300 to-pink-200">Technical Precision.</span>
+        </h1>
+        
+        {/* Description Description */}
+        <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl opacity-90">
+          A comprehensive overview of my core technical stack and proficiency levels, focused on building 
+          scalable, performant, and visually captivating web experiences.
         </p>
-       
+
       </div>
-    </div>
+    </header>
   );
 }
-
-export default HeroSection;
